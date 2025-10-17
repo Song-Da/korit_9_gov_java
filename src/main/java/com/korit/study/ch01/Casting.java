@@ -23,3 +23,6 @@ public class Casting {
 
     }
 }
+/*
+유틸 크래스의 특징. 뒤에 s 가 붙음
+ */

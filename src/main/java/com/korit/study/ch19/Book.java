@@ -1,14 +1,12 @@
 package com.korit.study.ch19;
 
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Objects;
 
-public class Car {
+public class Book {
     private String model;
     private String color;
 
-    public Car(String model, String color) {
+    public Book(String model, String color) {
         this.model = model;
         this.color = color;
     }
