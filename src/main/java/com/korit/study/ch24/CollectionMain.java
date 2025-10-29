@@ -5,7 +5,7 @@ import java.util.*;
 public class CollectionMain {
     public static void main(String[] args) {
         // 문자열을 담을 수 있는 ArrayList 생성;
-        List<String> list = new ArrayList<>(); // 여기도 업캐스팅인 List<> 가 가능하다. 왜? 같은 인터페이스니까.
+        List<String> list = new ArrayList<>(); //스니까 여기도 업캐스팅인 List<> 가 가능하다. 왜? 같은 인터페이.
         // 대입되어지는 자료형이 담는 것과 서로 다르면 무조건 업캐스팅이며 얘가 얘를 상속하고 있구나, 그럼?
         // 나중에 다운 캐스팅도 할 수 있겠구나 하고 가능성을 넓혀야 한다. 잘 알아두기.
 

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class CollectionMain {
     public static void main(String[] args) {
-        // 컬렉션이라느 것들은 제네릭을 자연스럽게 도입할 수밖에 없게 됨.
+        // 컬렉션이라는 것들은 제네릭을 자연스럽게 도입할 수밖에 없게 됨.
         ArrayList list = new ArrayList<>(); // 대문자로 시작함. 클래스임. 그럼 객체!
         list.add(10); // 0
         list.add("20"); // 1

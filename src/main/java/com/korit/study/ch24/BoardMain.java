@@ -8,8 +8,8 @@ public class BoardMain {
         // 이거 풀어내고 만들어내기 못하면 아무것도 못함
 // 게시판
         /**
-         * [
-         *      {
+         * [        -> new ArrayList<>()
+         *      {   -> new HashMap<>()
          *          "title": "게시판 제목1",              <<< String, String
          *          "writer": {                         <<< String, Map 이니까 Object
          *              "name": "김준일",                <<< String, String
@@ -29,7 +29,7 @@ public class BoardMain {
          *      },      <<< 여기까지가 Map
          *      {
          *          "title": "게시판 제목2",
-         *          "writer": {
+         *          "writer": {     
          *              "name": "김준사",
          *              "age": 34
          *          },
@@ -39,7 +39,7 @@ public class BoardMain {
          *                  "writer": "김준오",
          *                  "content": "댓글 내용11"
          *              },
-         *              {
+         *              {     -> new HashMap<String, String>()
          *                  "writer": "김준육",
          *                  "content": "댓글 내용22"
          *              },
@@ -50,6 +50,9 @@ public class BoardMain {
 
         // 대괄호 List 그 안에 중괄호 Map (풀지 못해도 되는데 부분적으로 이해하기)
         // 큰 부분부터 만들지 말고 안쪽의 자그마한 부분을 먼저 만들고 만든 작은 걸 담을 수 있는 List 를 만들고 다시 Map 을 만들고 그걸 다 담아줄 List 를 생성
+
+
+
 
 //        Map<String, String> firstMap = new HashMap<>();
 //        List<String> firstList = new ArrayList<>();
@@ -167,7 +170,9 @@ public class BoardMain {
 
             // 두 번째 게시글의 첫 번째 댓글 내용
             String secondPostFirstCommentContent = (String) ((Map<?, ?>) ((List<?>) boardList.get(1).get("comments")).get(0)).get("content");
-            System.out.println("두 번째 게시글 첫 번째 댓글 내용: " + secondPostFirstCommentContent);
+        System.out.println("두 번째 게시글 첫 번째 댓글 내용: " + secondPostFirstCommentContent);
+
+        // HashMap (String, String,
         }
     }
 
@@ -175,4 +180,15 @@ public class BoardMain {
  * Map 을 객체로 만든다? 이 구조를 객체로 만든다... 왜 클래스를 써야 하나?
  * 클래스 객체 구조로 생각을 해보라는...? 뭘까
  * 이걸 어떻게 바꿔야 하는 거지 ㅋㅋ
+ * 
+ * key 는 1개인데 Value 는 개많음 제한이 없나 하긴 Map 은 2개 이상 어쩌구아니엇나
+ *
+ *
+ * 제일 바깥 리스트가 완성되려면 맵을 먼저 만들어야 함.
+ * 부품 작은 것부터 만들고 점점 크게 만들어 나가는 게 좋음. 아직 큰그림을 그리는 눈이 없어서...
+ *
+ * 공부할 때 좀 단숞하게 접근하기
+ *
+ *
+ *
  */
